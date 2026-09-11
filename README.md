@@ -7,4 +7,9 @@ My daily solutions for the LeetCode SQL 50 study plan, focused on practicing que
 - **Status:** In Progress (5/ 50 solved)
 
 ## Solved Problems
-- [x] Problem 1757 - Recyclable and Low Fat Products
+Problem 1:
+Recyclable and Low Fat Products
+problem 2:
+problem:FIND CUSTOMER REFEREE
+problem 3:
+big countries
