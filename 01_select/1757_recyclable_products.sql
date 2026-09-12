@@ -25,3 +25,11 @@ link:https://leetcode.com/problems/article-views-i/?envType=study-plan-v2&envId=
 select distinct(author_id) as id from Views
 where author_id=viewer_id
 order by author_id asc;
+
+problem 5:
+problem:Invalid Tweets
+link:https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50
+select tweet_id from Tweets
+where char_length(content)>15;
+
+problem 6:
