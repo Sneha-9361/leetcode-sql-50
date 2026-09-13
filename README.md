@@ -13,3 +13,9 @@ problem 2:
 problem:FIND CUSTOMER REFEREE
 problem 3:
 big countries
+problem 4:
+Articles Views I
+problem 5:
+Invalid Tweets
+problem 6:
+Replace employee_id with the unique identifier
