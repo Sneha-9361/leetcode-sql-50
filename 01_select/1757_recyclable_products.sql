@@ -33,3 +33,8 @@ select tweet_id from Tweets
 where char_length(content)>15;
 
 problem 6:
+problem:Replace employee id with unique identifier
+link:https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/?envType=study-plan-v2&envId=top-sql-50
+select eu.unique_id,e.name from Employees e left join 
+EmployeeUNI eu on
+e.id=eu.id;
