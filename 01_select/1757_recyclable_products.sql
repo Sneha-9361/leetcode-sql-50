@@ -38,3 +38,21 @@ link:https://leetcode.com/problems/replace-employee-id-with-the-unique-identifie
 select eu.unique_id,e.name from Employees e left join 
 EmployeeUNI eu on
 e.id=eu.id;
+
+problem 7:
+problem:Product Sales Analysis I
+link:https://leetcode.com/problems/product-sales-analysis-i/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select p.product_name,s.year,s.price from Sales s join Product p
+on p.product_id=s.product_id;
+
+
+
+problem 8:
+problem:Customer Who Visited but Did Not Make Any Transactions
+link:https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50
+SELECT customer_id, COUNT(v.visit_id) as count_no_trans 
+FROM Visits v
+LEFT JOIN Transactions t ON v.visit_id = t.visit_id
+WHERE transaction_id IS NULL
+GROUP BY customer_id
