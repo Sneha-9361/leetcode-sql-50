@@ -19,3 +19,9 @@ problem 5:
 Invalid Tweets
 problem 6:
 Replace employee_id with the unique identifier
+problem 7:
+problem:Product Sales Analysis I
+problem 8:
+problem:Customer Who Visited but Did Not Make Any Transactions
+
+
