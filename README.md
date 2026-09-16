@@ -4,7 +4,7 @@ My daily solutions for the LeetCode SQL 50 study plan, focused on practicing que
 
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Status:** In Progress (5/ 50 solved)
+- **Status:** In Progress (10/ 50 solved)
 
 ## Solved Problems
 Problem 1:
@@ -23,5 +23,8 @@ problem 7:
 problem:Product Sales Analysis I
 problem 8:
 problem:Customer Who Visited but Did Not Make Any Transactions
-
+problem 9:
+problem:Rising temperature
+problem 10:
+problem:Average time of process per machine
 
