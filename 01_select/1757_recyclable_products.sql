@@ -56,3 +56,25 @@ FROM Visits v
 LEFT JOIN Transactions t ON v.visit_id = t.visit_id
 WHERE transaction_id IS NULL
 GROUP BY customer_id
+
+problem 9:
+problem:Rising temperature
+link:https://leetcode.com/problems/rising-temperature/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select w1.id from Weather w1,Weather w2
+where datediff(w1.recordDate,w2.recordDate)=1 and w1.temperature>w2.temperature;
+
+
+problem 10:
+problem:Average time of process per machine
+link:https://leetcode.com/problems/average-time-of-process-per-machine/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below
+select machine_id,round(avg(end_time-start_time),3) as processing_time
+from (select machine_id,process_id,
+max(case when activity_type="start" then timestamp end) as start_time,
+max(case when activity_type="end" then timestamp end) as end_time
+from Activity
+group by machine_id,process_id
+) as process_durations
+group by machine_id ;
