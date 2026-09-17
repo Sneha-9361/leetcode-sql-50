@@ -78,3 +78,34 @@ from Activity
 group by machine_id,process_id
 ) as process_durations
 group by machine_id ;
+
+
+
+
+
+problem 11:
+problem:Employee Bonus
+link:https://leetcode.com/problems/employee-bonus/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select e.name,b.bonus from Employee e  left join Bonus b
+on e.empId=b.empId
+where b.bonus<1000 or b.bonus is null;
+
+
+problem 12:
+problem:Students and Examinations
+link:https://leetcode.com/problems/students-and-examinations/?envType=study-plan-v2&envId=top-sql-50
+SELECT
+    S.student_id
+    ,S.student_name
+    ,SU.subject_name
+    ,COUNT(E.student_id) attended_exams
+FROM Students S
+CROSS JOIN Subjects SU
+LEFT JOIN Examinations E
+    ON S.student_id = E.student_id
+    AND SU.subject_name = E.subject_name
+
+GROUP BY S.student_id, S.student_name, SU.subject_name
+ORDER BY S.student_id, S.student_name, SU.subject_name
+;
