@@ -27,4 +27,8 @@ problem 9:
 problem:Rising temperature
 problem 10:
 problem:Average time of process per machine
+problem 11:
+problem:Employee Bonus
+problem 12:
+problem:Students and Examinations
 
