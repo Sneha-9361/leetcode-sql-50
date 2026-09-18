@@ -109,3 +109,14 @@ LEFT JOIN Examinations E
 GROUP BY S.student_id, S.student_name, SU.subject_name
 ORDER BY S.student_id, S.student_name, SU.subject_name
 ;
+
+
+
+problem 13:
+problem:managers with atleast 5 direct reports
+link:https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select e.name from Employee e  join Employee m on
+e.id=m.managerId
+group by m.managerId
+having count(e.id)>=5;
