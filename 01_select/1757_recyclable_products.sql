@@ -120,3 +120,18 @@ select e.name from Employee e  join Employee m on
 e.id=m.managerId
 group by m.managerId
 having count(e.id)>=5;
+
+
+
+
+problem:14
+problem:Confirmation Rate
+link:https://leetcode.com/problems/confirmation-rate/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below
+select s.user_id, 
+coalesce(round(sum(case when c.action="confirmed" then 1 else  0 
+end)/nullif(count(c.action),0),2),0) confirmation_rate
+from Signups s left join Confirmations c on
+s.user_id=c.user_id
+group by s.user_id;
