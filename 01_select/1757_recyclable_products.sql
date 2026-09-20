@@ -135,3 +135,25 @@ end)/nullif(count(c.action),0),2),0) confirmation_rate
 from Signups s left join Confirmations c on
 s.user_id=c.user_id
 group by s.user_id;
+
+
+problem:15
+problem:not boring movies
+link:https://leetcode.com/problems/not-boring-movies/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below
+select id,movie,description,rating from Cinema
+where id%2=1 and description !='boring'
+order by rating desc;
+
+
+problem:16
+problem:Avg selling price
+link:https://leetcode.com/problems/average-selling-price/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below
+select p.product_id,case when coalesce(sum(u.units),0)=0 then 0 else round(sum(u.units*p.price)/(sum(u.units)),2) end average_price
+from Prices p left join
+UnitsSold u on p.product_id=u.product_id and u.purchase_date>=p.start_date
+and u.purchase_date<=p.end_date
+group by p.product_id;
