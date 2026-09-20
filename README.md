@@ -31,4 +31,7 @@ problem 11:
 problem:Employee Bonus
 problem 12:
 problem:Students and Examinations
-
+problem 13:
+problem:managers with atleast 5 direct reports
+problem:14
+problem:Confirmation Rate
