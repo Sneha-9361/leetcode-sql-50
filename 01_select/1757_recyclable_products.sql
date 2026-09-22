@@ -157,3 +157,32 @@ from Prices p left join
 UnitsSold u on p.product_id=u.product_id and u.purchase_date>=p.start_date
 and u.purchase_date<=p.end_date
 group by p.product_id;
+
+
+
+
+problem:17
+problem:project employees I
+link:https://leetcode.com/problems/project-employees-i/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select p.project_id,round(avg(e.experience_years),2) average_years from Project p
+join Employee e on 
+p.employee_id=e.employee_id
+group by p.project_id;
+
+
+
+
+
+problem:18
+problem:percentage of users attended the contest
+link:https://leetcode.com/problems/percentage-of-users-attended-a-contest/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select r.contest_id,round(
+count(r.user_id)/(select count(*) from Users)*100,2)
+percentage from Users u join 
+Register r on 
+u.user_id=r.user_id
+
+group by r.contest_id
+order by percentage desc,r.contest_id ;
