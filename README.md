@@ -35,3 +35,12 @@ problem 13:
 problem:managers with atleast 5 direct reports
 problem:14
 problem:Confirmation Rate
+problem:15
+problem:not boring movies
+problem:16
+problem:Avg selling price
+problem:17
+problem:project employees I
+
+problem:18
+problem:percentage of users attended the contest
