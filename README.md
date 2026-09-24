@@ -4,7 +4,7 @@ My daily solutions for the LeetCode SQL 50 study plan, focused on practicing que
 
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Status:** In Progress (10/ 50 solved)
+- **Status:** In Progress (18/ 50 solved)
 
 ## Solved Problems
 Problem 1:
@@ -41,6 +41,5 @@ problem:16
 problem:Avg selling price
 problem:17
 problem:project employees I
-
 problem:18
 problem:percentage of users attended the contest
