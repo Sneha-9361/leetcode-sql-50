@@ -1,45 +1,37 @@
-# LeetCode SQL 50 Practice
+# LeetCode SQL 50 – MySQL Practice
 
-My daily solutions for the LeetCode SQL 50 study plan, focused on practicing query optimization, joins, and aggregations.
+Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing SQL concepts such as filtering, joins, aggregations, subqueries, and query optimization.
 
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Status:** In Progress (18/ 50 solved)
+- **Progress:** 18 / 50 solved
+- **Status:** In Progress
 
 ## Solved Problems
-Problem 1:
-Recyclable and Low Fat Products
-problem 2:
-problem:FIND CUSTOMER REFEREE
-problem 3:
-big countries
-problem 4:
-Articles Views I
-problem 5:
-Invalid Tweets
-problem 6:
-Replace employee_id with the unique identifier
-problem 7:
-problem:Product Sales Analysis I
-problem 8:
-problem:Customer Who Visited but Did Not Make Any Transactions
-problem 9:
-problem:Rising temperature
-problem 10:
-problem:Average time of process per machine
-problem 11:
-problem:Employee Bonus
-problem 12:
-problem:Students and Examinations
-problem 13:
-problem:managers with atleast 5 direct reports
-problem:14
-problem:Confirmation Rate
-problem:15
-problem:not boring movies
-problem:16
-problem:Avg selling price
-problem:17
-problem:project employees I
-problem:18
-problem:percentage of users attended the contest
+
+| # | Problem |
+|---|---|
+| 1 | Recyclable and Low Fat Products |
+| 2 | Find Customer Referee |
+| 3 | Big Countries |
+| 4 | Article Views I |
+| 5 | Invalid Tweets |
+| 6 | Replace Employee ID With The Unique Identifier |
+| 7 | Product Sales Analysis I |
+| 8 | Customer Who Visited but Did Not Make Any Transactions |
+| 9 | Rising Temperature |
+| 10 | Average Time of Process per Machine |
+| 11 | Employee Bonus |
+| 12 | Students and Examinations |
+| 13 | Managers with at Least 5 Direct Reports |
+| 14 | Confirmation Rate |
+| 15 | Not Boring Movies |
+| 16 | Average Selling Price |
+| 17 | Project Employees I |
+| 18 | Percentage of Users Attended a Contest |
+
+## Progress
+
+**18 / 50 completed — 36%**
+
+Continuing to solve one problem at a time and improve my SQL skills through daily practice.
