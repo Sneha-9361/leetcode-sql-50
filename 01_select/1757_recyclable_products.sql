@@ -220,3 +220,16 @@ FROM
     Transactions
 GROUP BY 
     month, country;
+
+
+
+
+
+
+    # Write your MySQL query statement below
+SELECT
+    customer_id,
+    MIN(order_date) AS orderD,
+    MIN(customer_pref_delivery_date) AS deliD
+FROM delivery
+GROUP BY customer_id;
