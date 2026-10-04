@@ -241,25 +241,25 @@ GROUP BY customer_id;
 
 problem:21
 problem:game play analysis
-link:https://leetcode.com/problems/game-play-analysis-iv/description/?envType=study-plan-v2&envId=top-sql-50
-WITH first_logins AS (
-  SELECT
-    A.player_id,
-    MIN(A.event_date) AS first_login
-  FROM
-    Activity A
-  GROUP BY
-    A.player_id
-), consec_logins AS (
-  SELECT
-    COUNT(A.player_id) AS num_logins
-  FROM
-    first_logins F
-    INNER JOIN Activity A ON F.player_id = A.player_id
-    AND F.first_login = DATE_SUB(A.event_date, INTERVAL 1 DAY)
-)
-SELECT
-  ROUND(
-    (SELECT C.num_logins FROM consec_logins C)
-    / (SELECT COUNT(F.player_id) FROM first_logins F)
-  , 2) AS fraction;
+https://leetcode.com/problems/game-play-analysis-iv/?envType=study-plan-v2&envId=top-sql-50
+ select round(count(distinct a.player_id)/ (select count(distinct player_id)from Activity),2) fraction FROM Activity a
+JOIN (
+    SELECT player_id, MIN(event_date) AS first_login
+    FROM Activity a
+    GROUP BY player_id
+) f
+ON a.player_id = f.player_id
+
+WHERE a.event_date = DATE_ADD(f.first_login, INTERVAL 1 DAY);
+
+\
+
+
+problem:22
+problem:number of unique subject taught by teacher_id
+link:https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/description/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below
+select teacher_id, count(distinct subject_id) cnt from Teacher
+group by teacher_id
+order by teacher_id;
