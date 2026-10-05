@@ -263,3 +263,13 @@ link:https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teac
 select teacher_id, count(distinct subject_id) cnt from Teacher
 group by teacher_id
 order by teacher_id;
+
+
+problem:23
+problem:User Activity for the Past 30 Days I
+https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select activity_date,count(distinct user_id) from Activity
+where activity_date BETWEEN DATE_SUB('2019-07-27', INTERVAL 29 DAY)
+AND '2019-07-27'
+group by activity_date;
