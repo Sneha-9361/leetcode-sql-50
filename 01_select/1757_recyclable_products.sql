@@ -273,3 +273,17 @@ select activity_date,count(distinct user_id) from Activity
 where activity_date BETWEEN DATE_SUB('2019-07-27', INTERVAL 29 DAY)
 AND '2019-07-27'
 group by activity_date;
+
+
+
+
+problem:24
+problem:Product Sales Analysis III
+https://leetcode.com/problems/product-sales-analysis-iii/description/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below
+select s1.product_id,s2.first_year,s1.quantity,s1.price from Sales s1 join (select product_id,min(year) first_year from Sales  group by product_id ) s2
+on s1.year=s2.first_year
+and s1.product_id=s2.product_id;
+
+
