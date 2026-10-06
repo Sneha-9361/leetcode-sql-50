@@ -4,7 +4,7 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Progress:** 18 / 50 solved
+- **Progress:** 24 / 50 solved
 - **Status:** In Progress
 
 ## Solved Problems
@@ -29,9 +29,15 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 | 16 | Average Selling Price |
 | 17 | Project Employees I |
 | 18 | Percentage of Users Attended a Contest |
+| 19 | Queries Quality and Percentage |
+| 20 | Monthly Transactions I |
+| 21 | Immediate Food Delivery II |
+| 22 | Game Play Analysis IV |
+| 23 | Number of Unique Subjects Taught by Each Teacher |
+| 24 | User Activity for the Past 30 Days I |
 
 ## Progress
 
-**18 / 50 completed — 36%**
+**24 / 50 completed — 48%**
 
 Continuing to solve one problem at a time and improve my SQL skills through daily practice.
