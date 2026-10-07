@@ -241,7 +241,7 @@ GROUP BY customer_id;
 
 problem:21
 problem:game play analysis
-https://leetcode.com/problems/game-play-analysis-iv/?envType=study-plan-v2&envId=top-sql-50
+link:https://leetcode.com/problems/game-play-analysis-iv/?envType=study-plan-v2&envId=top-sql-50
  select round(count(distinct a.player_id)/ (select count(distinct player_id)from Activity),2) fraction FROM Activity a
 JOIN (
     SELECT player_id, MIN(event_date) AS first_login
@@ -267,7 +267,7 @@ order by teacher_id;
 
 problem:23
 problem:User Activity for the Past 30 Days I
-https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50
+link:https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50
 # Write your MySQL query statement below
 select activity_date,count(distinct user_id) from Activity
 where activity_date BETWEEN DATE_SUB('2019-07-27', INTERVAL 29 DAY)
@@ -279,11 +279,14 @@ group by activity_date;
 
 problem:24
 problem:Product Sales Analysis III
-https://leetcode.com/problems/product-sales-analysis-iii/description/?envType=study-plan-v2&envId=top-sql-50
+link:https://leetcode.com/problems/product-sales-analysis-iii/description/?envType=study-plan-v2&envId=top-sql-50
 
 # Write your MySQL query statement below
 select s1.product_id,s2.first_year,s1.quantity,s1.price from Sales s1 join (select product_id,min(year) first_year from Sales  group by product_id ) s2
 on s1.year=s2.first_year
 and s1.product_id=s2.product_id;
+
+
+
 
 
