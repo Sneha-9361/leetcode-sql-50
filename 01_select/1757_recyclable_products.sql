@@ -1,19 +1,18 @@
-problem 1:
+problem 1:Recyclable and Low Fat Products
 link:https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envType=study-plan-v2&envId=top-sql-50
-problem:1757. Recyclable and Low Fat Products
+problem:1757. 
 select product_id from Products
 where low_fats="Y" and recyclable="Y"
 
-problem 2:
-problem:FIND CUSTOMER REFEREE
+problem 2:FIND CUSTOMER REFEREE
 link:https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50
 select name from Customer
 where referee_id!=2 or referee_id is null;
 
 
-problem 3:
+problem 3:Big Countries
 link:https://leetcode.com/problems/big-countries/?envType=study-plan-v2&envId=top-sql-50
-problem :Big Countries
+
 select name,population,area from World
 where population>=25000000 or area>=3000000;
 
@@ -205,7 +204,7 @@ query_name;
 
 
 
-problem:19
+problem:20
 problem:monthly_transaction I
 link:https://leetcode.com/problems/monthly-transactions-i/description/?envType=study-plan-v2&envId=top-sql-50
 # Write your MySQL query statement below
@@ -223,7 +222,7 @@ GROUP BY
 
 
 
-problem:20
+problem:21
 problem:immediate food delivery II
 link:https://leetcode.com/problems/immediate-food-delivery-ii/?envType=study-plan-v2&envId=top-sql-50
 
@@ -239,7 +238,7 @@ GROUP BY customer_id;
 
 
 
-problem:21
+problem:22
 problem:game play analysis
 link:https://leetcode.com/problems/game-play-analysis-iv/?envType=study-plan-v2&envId=top-sql-50
  select round(count(distinct a.player_id)/ (select count(distinct player_id)from Activity),2) fraction FROM Activity a
@@ -255,7 +254,7 @@ WHERE a.event_date = DATE_ADD(f.first_login, INTERVAL 1 DAY);
 \
 
 
-problem:22
+problem:23
 problem:number of unique subject taught by teacher_id
 link:https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/description/?envType=study-plan-v2&envId=top-sql-50
 
@@ -265,7 +264,7 @@ group by teacher_id
 order by teacher_id;
 
 
-problem:23
+problem:24
 problem:User Activity for the Past 30 Days I
 link:https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50
 # Write your MySQL query statement below
@@ -277,7 +276,7 @@ group by activity_date;
 
 
 
-problem:24
+problem:25
 problem:Product Sales Analysis III
 link:https://leetcode.com/problems/product-sales-analysis-iii/description/?envType=study-plan-v2&envId=top-sql-50
 
@@ -288,5 +287,16 @@ and s1.product_id=s2.product_id;
 
 
 
+<<<<<<< HEAD
 
 
+=======
+problem:26
+problem:Classes With at Least 5 Students
+link:https://leetcode.com/problems/classes-with-at-least-5-students/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below
+select class from Courses
+group by class
+having count(student)>=5;
+>>>>>>> 1c5beef (update: save latest project changes)
