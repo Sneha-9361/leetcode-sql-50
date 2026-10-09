@@ -287,10 +287,6 @@ and s1.product_id=s2.product_id;
 
 
 
-<<<<<<< HEAD
-
-
-=======
 problem:26
 problem:Classes With at Least 5 Students
 link:https://leetcode.com/problems/classes-with-at-least-5-students/?envType=study-plan-v2&envId=top-sql-50
@@ -300,3 +296,16 @@ select class from Courses
 group by class
 having count(student)>=5;
 >>>>>>> 1c5beef (update: save latest project changes)
+
+
+
+
+
+problem:27
+problem:Find Followers Count
+link:https://leetcode.com/problems/find-followers-count/description/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below
+select user_id,count(follower_id) followers_count from Followers
+group by user_id
+order by followers_count asc;
