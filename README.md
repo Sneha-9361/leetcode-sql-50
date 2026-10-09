@@ -4,7 +4,7 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Progress:** 26 / 50 solved
+- **Progress:** 27 / 50 solved
 - **Status:** In Progress
 
 ## Solved Problems
