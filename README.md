@@ -37,9 +37,10 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 | 24 | User Activity for the Past 30 Days I |
 | 25 | Product Sales Analysis III |
 | 26 | Classes With at Least 5 Students |
+| 27 | Find Followers Count |
 
 ## Progress
 
-**26 / 50 completed — 48%**Product Sales Analysis III
+**27 / 50 completed — 48%**Product Sales Analysis III
 
 Continuing to solve one problem at a time and improve my SQL skills through daily practice.
