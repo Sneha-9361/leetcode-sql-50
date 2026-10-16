@@ -309,3 +309,36 @@ link:https://leetcode.com/problems/find-followers-count/description/?envType=stu
 select user_id,count(follower_id) followers_count from Followers
 group by user_id
 order by followers_count asc;
+
+
+
+
+
+
+problem:28
+problem:Biggest Single Number
+link:https://leetcode.com/problems/biggest-single-number/description/?envType=study-plan-v2&envId=top-sql-50
+
+
+# Write your MySQL query statement below
+with cte as (select num from MyNumbers 
+group by num
+having count(num)=1)
+select max(num) num from cte;
+
+
+
+
+
+
+problem:29
+problem:Customers Who Bought All Products
+link:https://leetcode.com/problems/customers-who-bought-all-products/description/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select customer_id from (select count(distinct p.product_key),c.customer_id from Product p  join Customer c
+on c.product_key=p.product_key
+group by c.customer_id
+having count(distinct c.product_key)=(select count(*) from Product)) a;
+
+
+
