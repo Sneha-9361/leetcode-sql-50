@@ -4,7 +4,7 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Progress:** 27 / 50 solved
+- **Progress:** 29 / 50 solved
 - **Status:** In Progress
 
 ## Solved Problems
@@ -38,9 +38,11 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 | 25 | Product Sales Analysis III |
 | 26 | Classes With at Least 5 Students |
 | 27 | Find Followers Count |
+| 28 | Biggest Single Number |
+| 29 | Customers Who Bought All Products |
 
 ## Progress
 
-**27 / 50 completed — 54%**
+**29 / 50 completed — 58%**
 
 Continuing to solve one problem at a time and improve my SQL skills through daily practice.
