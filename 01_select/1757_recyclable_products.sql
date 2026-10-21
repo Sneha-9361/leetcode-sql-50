@@ -340,5 +340,11 @@ on c.product_key=p.product_key
 group by c.customer_id
 having count(distinct c.product_key)=(select count(*) from Product)) a;
 
-
-
+problem:30
+problem:The Number of Employees Which Report to Each Employee
+link:https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/description/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select m.employee_id,m.name,count(e.reports_to) reports_count,round(avg(e.age)) average_age from Employees as e join Employees m
+on e.reports_to=m.employee_id
+group by m.employee_id
+order by m.employee_id;
