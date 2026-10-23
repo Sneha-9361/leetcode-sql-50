@@ -348,3 +348,16 @@ select m.employee_id,m.name,count(e.reports_to) reports_count,round(avg(e.age)) 
 on e.reports_to=m.employee_id
 group by m.employee_id
 order by m.employee_id;
+
+
+
+
+
+
+problem:31
+problem:Primary Department for Each Employee
+link:https://leetcode.com/problems/primary-department-for-each-employee/submissions/2179821738/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+with cte as (select employee_id,department_id,primary_flag,count(*) over (partition by employee_id) as dept_count from Employee)
+ select employee_id,department_id from cte
+where primary_flag="Y" or dept_count=1;
