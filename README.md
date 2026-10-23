@@ -41,6 +41,7 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 | 28 | Biggest Single Number |
 | 29 | Customers Who Bought All Products |
 | 30 | The Number of Employees Which Report to Each Employee |
+
 ## Progress
 
 **30 / 50 completed — 60%**
