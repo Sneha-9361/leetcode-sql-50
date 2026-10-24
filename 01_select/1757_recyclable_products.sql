@@ -361,3 +361,14 @@ link:https://leetcode.com/problems/primary-department-for-each-employee/submissi
 with cte as (select employee_id,department_id,primary_flag,count(*) over (partition by employee_id) as dept_count from Employee)
  select employee_id,department_id from cte
 where primary_flag="Y" or dept_count=1;
+
+
+
+
+problem:32
+problem:Triangle Judgement
+link:https://leetcode.com/problems/triangle-judgement/description/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+select x,y,z,
+case when x+y>z and y+z>x and z+x>y then 'Yes' else 'No'
+end as triangle from Triangle;
