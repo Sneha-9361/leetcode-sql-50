@@ -4,7 +4,7 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Progress:** 31 / 50 solved
+- **Progress:** 32 / 50 solved
 - **Status:** In Progress
 
 ---
@@ -44,11 +44,12 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 | 29 | Customers Who Bought All Products |
 | 30 | The Number of Employees Which Report to Each Employee |
 | 31 | Primary Department for Each Employee |
+| 32 | Triangle Judgement |
 
 ---
 
 ## Progress
 
-**31 / 50 completed — 62%**
+**32 / 50 completed — 64%**
 
 Continuing to solve one problem at a time and improve my SQL skills through daily practice.
