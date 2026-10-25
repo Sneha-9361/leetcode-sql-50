@@ -372,3 +372,18 @@ link:https://leetcode.com/problems/triangle-judgement/description/?envType=study
 select x,y,z,
 case when x+y>z and y+z>x and z+x>y then 'Yes' else 'No'
 end as triangle from Triangle;
+
+
+problem :33
+problem:Consecutive numbers
+link:https://leetcode.com/problems/consecutive-numbers/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+SELECT DISTINCT l1.num AS ConsecutiveNums
+FROM Logs l1
+JOIN Logs l2
+    ON l1.id = l2.id -1
+JOIN Logs l3
+    ON l2.id = l3.id -1
+    WHERE l1.num = l2.num
+  AND l2.num = l3.num;
+-- Add your condition here
