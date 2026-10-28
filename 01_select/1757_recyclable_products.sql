@@ -387,3 +387,40 @@ JOIN Logs l3
     WHERE l1.num = l2.num
   AND l2.num = l3.num;
 -- Add your condition here
+
+
+
+
+
+
+problem :34
+problem:Product Price at a Given Date
+https://leetcode.com/problems/product-price-at-a-given-date/description/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT
+  product_id,
+  10 AS price
+FROM
+  Products
+GROUP BY
+  product_id
+HAVING
+  MIN(change_date) > '2019-08-16'
+UNION ALL
+SELECT
+  product_id,
+  new_price AS price
+FROM
+  Products
+WHERE
+  (product_id, change_date) IN (
+    SELECT
+      product_id,
+      MAX(change_date)
+    FROM
+      Products
+    WHERE
+      change_date <= '2019-08-16'
+    GROUP BY
+      product_id
+  )
