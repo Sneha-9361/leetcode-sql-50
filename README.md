@@ -2,9 +2,10 @@
 
 Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing SQL concepts such as filtering, joins, aggregations, subqueries, and query optimization.
 
+
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Progress:** 33 / 50 solved
+- **Progress:** 35 / 50 solved
 - **Status:** In Progress
 
 ---
@@ -46,11 +47,13 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 | 31 | Primary Department for Each Employee |
 | 32 | Triangle Judgement |
 | 33 | Consecutive Numbers |
+| 34 | Product Price at a Given Date |
+| 35 | Last Person to Fit in the Bus |
 
 ---
 
 ## Progress
 
-**33 / 50 completed — 66%**
+**35 / 50 completed — 70%**
 
 Continuing to solve one problem at a time and improve my SQL skills through daily practice.
