@@ -397,30 +397,25 @@ problem :34
 problem:Product Price at a Given Date
 https://leetcode.com/problems/product-price-at-a-given-date/description/?envType=study-plan-v2&envId=top-sql-50
 
-SELECT
-  product_id,
-  10 AS price
-FROM
-  Products
-GROUP BY
-  product_id
-HAVING
-  MIN(change_date) > '2019-08-16'
-UNION ALL
-SELECT
-  product_id,
-  new_price AS price
-FROM
-  Products
-WHERE
-  (product_id, change_date) IN (
-    SELECT
-      product_id,
-      MAX(change_date)
-    FROM
-      Products
-    WHERE
-      change_date <= '2019-08-16'
-    GROUP BY
-      product_id
-  )
+select product_id,new_price as price from Products  where(product_id,change_date)  in (select product_id,max(change_date) from Products
+where change_date <='2019-08-16'
+group by product_id)
+union all
+select distinct  product_id,10 as price from Products  where product_id not in (select product_id from Products
+where change_date<='2019-08-16'
+);
+
+
+
+
+problem:35
+problem:Last Person to Fit in the Bus
+link:https://leetcode.com/problems/last-person-to-fit-in-the-bus/description/?envType=study-plan-v2&envId=top-sql-50
+# Write your MySQL query statement below
+with cte as (select person_name,
+sum(weight) over(order by turn)as total_weight  
+from Queue)
+
+select person_name from cte
+where total_weight<=1000
+order by total_weight desc limit 1;
