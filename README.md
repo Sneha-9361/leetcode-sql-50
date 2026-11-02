@@ -5,7 +5,7 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 
 - **Dialect:** MySQL
 - **Started:** September 2026
-- **Progress:** 35 / 50 solved
+- **Progress:** 36 / 50 solved
 - **Status:** In Progress
 
 ---
@@ -49,11 +49,12 @@ Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing S
 | 33 | Consecutive Numbers |
 | 34 | Product Price at a Given Date |
 | 35 | Last Person to Fit in the Bus |
+| 36 | Count Salary Categories |
 
 ---
 
 ## Progress
 
-**35 / 50 completed — 70%**
+**36 / 50 completed — 72%**
 
 Continuing to solve one problem at a time and improve my SQL skills through daily practice.
