@@ -419,3 +419,16 @@ from Queue)
 select person_name from cte
 where total_weight<=1000
 order by total_weight desc limit 1;
+
+
+
+
+problem :36
+problem: Count Salary Categories
+link:https://leetcode.com/problems/count-salary-categories/description/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT 'Low Salary' AS category, COUNT(*) AS accounts_count FROM Accounts WHERE income < 20000
+UNION ALL
+SELECT 'Average Salary' AS category ,COUNT(*) AS accounts_count FROM Accounts WHERE income between 20000 and 50000
+UNION ALL
+SELECT 'High Salary' AS category, COUNT(*) AS accounts_count FROM Accounts WHERE income >50000;
