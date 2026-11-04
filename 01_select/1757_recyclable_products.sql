@@ -432,3 +432,16 @@ UNION ALL
 SELECT 'Average Salary' AS category ,COUNT(*) AS accounts_count FROM Accounts WHERE income between 20000 and 50000
 UNION ALL
 SELECT 'High Salary' AS category, COUNT(*) AS accounts_count FROM Accounts WHERE income >50000;
+
+
+
+
+
+problem:37
+problem:Employees Whose Manager Left the Company
+link:https://leetcode.com/problems/employees-whose-manager-left-the-company/?envType=study-plan-v2&envId=top-sql-50
+
+select employee_id from Employees 
+where salary<30000 and  manager_id 
+not in(select employee_id from Employees) 
+order by employee_id;
