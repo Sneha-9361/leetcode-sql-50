@@ -1,60 +1,69 @@
-# LeetCode SQL 50 – MySQL Practice
+# LeetCode SQL 50 Solutions (MySQL)
 
-Daily solutions from the **LeetCode SQL 50 Study Plan**, focused on practicing SQL concepts such as filtering, joins, aggregations, subqueries, and query optimization.
-
-
-- **Dialect:** MySQL
-- **Started:** September 2026
-- **Progress:** 36 / 50 solved
-- **Status:** In Progress
+Solutions, clean queries, and logic breakdowns for the **LeetCode Top SQL 50** study plan using MySQL 8.0.
 
 ---
 
-## Solved Problems
+## Progress Tracker
 
-| # | Problem |
-|---|---|
-| 1 | Recyclable and Low Fat Products |
-| 2 | Find Customer Referee |
-| 3 | Big Countries |
-| 4 | Article Views I |
-| 5 | Invalid Tweets |
-| 6 | Replace Employee ID With The Unique Identifier |
-| 7 | Product Sales Analysis I |
-| 8 | Customer Who Visited but Did Not Make Any Transactions |
-| 9 | Rising Temperature |
-| 10 | Average Time of Process per Machine |
-| 11 | Employee Bonus |
-| 12 | Students and Examinations |
-| 13 | Managers with at Least 5 Direct Reports |
-| 14 | Confirmation Rate |
-| 15 | Not Boring Movies |
-| 16 | Average Selling Price |
-| 17 | Project Employees I |
-| 18 | Percentage of Users Attended a Contest |
-| 19 | Queries Quality and Percentage |
-| 20 | Monthly Transactions I |
-| 21 | Immediate Food Delivery II |
-| 22 | Game Play Analysis IV |
-| 23 | Number of Unique Subjects Taught by Each Teacher |
-| 24 | User Activity for the Past 30 Days I |
-| 25 | Product Sales Analysis III |
-| 26 | Classes With at Least 5 Students |
-| 27 | Find Followers Count |
-| 28 | Biggest Single Number |
-| 29 | Customers Who Bought All Products |
-| 30 | The Number of Employees Which Report to Each Employee |
-| 31 | Primary Department for Each Employee |
-| 32 | Triangle Judgement |
-| 33 | Consecutive Numbers |
-| 34 | Product Price at a Given Date |
-| 35 | Last Person to Fit in the Bus |
-| 36 | Count Salary Categories |
+![Progress](https://img.shields.io/badge/Progress-37%20%2F%2050%20Completed-brightgreen?style=for-the-badge)
+
+* **Status:** 37 / 50 Solved (74%)
+* **Engine:** MySQL 8.0
+* **Focus:** Data Engineering & Analytics interview preparation
 
 ---
 
-## Progress
+## Solved Problems Log
 
-**36 / 50 completed — 72%**
+| # | Problem Name | Difficulty | Key Concept | Solution |
+|---|---|---|---|---|
+| 1757 | Recyclable and Low Fat Products | Easy | Basic Filtering (`WHERE`) | `solutions/1757.sql` |
+| 584 | Find Customer Referee | Easy | Handling `NULL` (`IS NULL`) | `solutions/584.sql` |
+| 595 | Big Countries | Easy | Multiple Conditions (`OR`) | `solutions/595.sql` |
+| 1148 | Article Views I | Easy | Deduplication (`DISTINCT`, `ORDER BY`) | `solutions/1148.sql` |
+| 1683 | Invalid Tweets | Easy | String Length (`LENGTH()`) | `solutions/1683.sql` |
+| 1378 | Replace Employee ID With The Unique Identifier | Easy | `LEFT JOIN` | `solutions/1378.sql` |
+| 1068 | Product Sales Analysis I | Easy | `INNER JOIN` | `solutions/1068.sql` |
+| 1581 | Customer Who Visited but Did Not Make Any Transactions | Easy | `LEFT JOIN` with `IS NULL` | `solutions/1581.sql` |
+| 197 | Rising Temperature | Easy | Self Join, `DATEDIFF()` | `solutions/197.sql` |
+| 1661 | Average Time of Process per Machine | Easy | Self Join, `AVG()`, `ROUND()` | `solutions/1661.sql` |
+| 577 | Employee Bonus | Easy | `LEFT JOIN`, `NULL` check | `solutions/577.sql` |
+| 1280 | Students and Examinations | Easy | `CROSS JOIN`, `LEFT JOIN`, `COUNT()` | `solutions/1280.sql` |
+| 570 | Managers with at Least 5 Direct Reports | Medium | `GROUP BY`, `HAVING COUNT() >= 5` | `solutions/570.sql` |
+| 1934 | Confirmation Rate | Medium | `LEFT JOIN`, `AVG(IF(...))` | `solutions/1934.sql` |
+| 620 | Not Boring Movies | Easy | Modulo (`id % 2 != 0`) | `solutions/620.sql` |
+| 1251 | Average Selling Price | Easy | `LEFT JOIN`, `ROUND()`, `IFNULL()` | `solutions/1251.sql` |
+| 1075 | Project Employees I | Easy | `INNER JOIN`, `AVG()`, `ROUND()` | `solutions/1075.sql` |
+| 1633 | Percentage of Users Attended a Contest | Easy | Subquery inside `SELECT` | `solutions/1633.sql` |
+| 1211 | Queries Quality and Percentage | Easy | Conditional Aggregation | `solutions/1211.sql` |
+| 1193 | Monthly Transactions I | Medium | `DATE_FORMAT()`, `SUM(IF(...))` | `solutions/1193.sql` |
+| 1174 | Immediate Food Delivery II | Medium | Subquery with `MIN(order_date)` | `solutions/1174.sql` |
+| 550 | Game Play Analysis IV | Medium | Self Join with `DATE_ADD()` | `solutions/550.sql` |
+| 2356 | Number of Unique Subjects Taught by Each Teacher | Easy | `COUNT(DISTINCT ...)` | `solutions/2356.sql` |
+| 1141 | User Activity for the Past 30 Days I | Easy | Date Window Filtering | `solutions/1141.sql` |
+| 1070 | Product Sales Analysis III | Medium | Subquery matching `(product_id, year)` | `solutions/1070.sql` |
+| 596 | Classes More Than 5 Students | Easy | `GROUP BY`, `HAVING COUNT() >= 5` | `solutions/596.sql` |
+| 1729 | Find Followers Count | Easy | `GROUP BY`, `ORDER BY` | `solutions/1729.sql` |
+| 619 | Biggest Single Number | Easy | Subquery with `COUNT() = 1` | `solutions/619.sql` |
+| 1045 | Customers Who Bought All Products | Medium | `HAVING COUNT(DISTINCT) = (SELECT ...)`| `solutions/1045.sql` |
+| 1731 | The Number of Employees Which Report to Each Employee | Easy | Self Join, `ROUND(AVG())` | `solutions/1731.sql` |
+| 1789 | Primary Department for Each Employee | Easy | `UNION` / `COUNT() OVER()` | `solutions/1789.sql` |
+| 610 | Triangle Judgement | Easy | Conditional `CASE WHEN` | `solutions/610.sql` |
+| 180 | Consecutive Numbers | Medium | Self Join / Window `LEAD()` | `solutions/180.sql` |
+| 1164 | Product Price at a Given Date | Medium | Subquery / `UNION` fallback | `solutions/1164.sql` |
+| 1204 | Last Person to Fit in the Bus | Medium | Running Total `SUM() OVER()` | `solutions/1204.sql` |
+| 1907 | Count Salary Categories | Medium | `UNION` with category buckets | `solutions/1907.sql` |
+| 1978 | Employees Whose Manager Left the Company | Easy | Subquery with `NOT IN`, `WHERE salary < 30000` | `solutions/1978.sql` |
 
-Continuing to solve one problem at a time and improve my SQL skills through daily practice.
+---
+
+## Repository Structure
+
+```text
+leetcode-sql-50/
+├── README.md
+└── solutions/
+    ├── 1757_recyclable_and_low_fat_products.sql
+    ├── 1978_employees_whose_manager_left_the_company.sql
+    └── ...
