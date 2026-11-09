@@ -445,3 +445,17 @@ select employee_id from Employees
 where salary<30000 and  manager_id 
 not in(select employee_id from Employees) 
 order by employee_id;
+
+
+
+problem:38
+problem: Exchange Seats
+link:https://leetcode.com/problems/exchange-seats/description/?envType=study-plan-v2&envId=top-sql-50
+
+# Write your MySQL query statement below 
+select case
+WHEN id % 2 = 1 AND id = (SELECT MAX(id) FROM Seat)
+THEN id 
+when id%2=1 then id+1
+else id-1 end as id,student from Seat
+order by id;
