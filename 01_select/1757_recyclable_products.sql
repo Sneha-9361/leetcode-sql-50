@@ -467,17 +467,18 @@ problem:Movie Rating
 https://leetcode.com/problems/movie-rating/description/?envType=study-plan-v2&envId=top-sql-50
 
 # Write your MySQL query statement below
-(SELECT name AS results
-FROM MovieRating JOIN Users USING(user_id)
-GROUP BY name
-ORDER BY COUNT(*) DESC, name
-LIMIT 1)
+(select u.name results from Users u join
+MovieRating mr on mr.user_id=u.user_id
+group by u.user_id,u.name
+order by count(u.user_id) desc,
+u.name limit 1)
 
-UNION ALL
+union all 
 
-(SELECT title AS results
-FROM MovieRating JOIN Movies USING(movie_id)
-WHERE EXTRACT(YEAR_MONTH FROM created_at) = 202002
-GROUP BY title
-ORDER BY AVG(rating) DESC, title
-LIMIT 1);
+(select m.title from MovieRating mr join
+Movies m on m.movie_id=mr.movie_id
+WHERE MONTH(mr.created_at) = 2
+  AND YEAR(mr.created_at) = 2020
+  group by m.movie_id,m.title
+order by avg(mr.rating) desc,m.title asc
+limit 1) 
