@@ -464,7 +464,7 @@ order by id;
 
 problem:39
 problem:Movie Rating
-https://leetcode.com/problems/movie-rating/description/?envType=study-plan-v2&envId=top-sql-50
+link:https://leetcode.com/problems/movie-rating/description/?envType=study-plan-v2&envId=top-sql-50
 
 # Write your MySQL query statement below
 (select u.name results from Users u join
@@ -482,3 +482,16 @@ WHERE MONTH(mr.created_at) = 2
   group by m.movie_id,m.title
 order by avg(mr.rating) desc,m.title asc
 limit 1) 
+
+
+
+problem :40
+ problem:Restaurant Growth
+link:https://leetcode.com/problems/restaurant-growth/description/?envType=study-plan-v2&envId=top-sql-50
+select c.visited_on,sum(cu.amount) as amount,round(sum(cu.amount)/7,2) as average_amount from (select distinct visited_on from Customer) c 
+join Customer cu 
+ON cu.visited_on >= DATE_SUB(c.visited_on, INTERVAL 6 DAY)
+AND cu.visited_on <= c.visited_on
+where  c.visited_on>=(select date_add(min(visited_on),interval 6 day) from Customer)
+group by c.visited_on
+order by c.visited_on asc;
