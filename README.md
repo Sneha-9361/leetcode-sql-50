@@ -6,9 +6,9 @@ Solutions, clean queries, and logic breakdowns for the **LeetCode Top SQL 50** s
 
 ## Progress Tracker
 
-![Progress](https://img.shields.io/badge/Progress-39%20%2F%2050%20Completed-brightgreen?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-40%20%2F%2050%20Completed-brightgreen?style=for-the-badge)
 
-- **Status:** 39 / 50 Solved (78%)
+- **Status:** 40 / 50 Solved (80%)
 - **Engine:** MySQL 8.0
 - **Focus:** Data Engineering & Analytics interview preparation
 
@@ -57,6 +57,7 @@ Solutions, clean queries, and logic breakdowns for the **LeetCode Top SQL 50** s
 | 1978 | Employees Whose Manager Left the Company | Easy | Subquery with `NOT IN`, `WHERE salary < 30000` | `solutions/1978.sql` |
 | 626 | Exchange Seats | Medium | `CASE WHEN`, `LEAD()`, `LAG()` | `solutions/626.sql` |
 | 1341 | Movie Rating | Medium | `UNION ALL`, `ORDER BY`, `LIMIT 1` | `solutions/1341.sql` |
+| 1321 | Restaurant Growth | Medium | Window Functions (`SUM() OVER()`, `ROWS BETWEEN`) | `solutions/1321.sql` |
 
 ---
 
@@ -70,4 +71,5 @@ leetcode-sql-50/
     ├── 1978_employees_whose_manager_left_the_company.sql
     ├── 626_exchange_seats.sql
     ├── 1341_movie_rating.sql
+    ├── 1321_restaurant_growth.sql
     └── ...
